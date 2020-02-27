@@ -97,7 +97,7 @@ app.use('*', (req, res, next) => {
 // local   mongodb://127.0.0.1:27017/formApi
 mongoose.connect('mongodb+srv://zabi:zabi123@cluster0-pg5tj.mongodb.net/test?retryWrites=true&w=majority', { useFindAndModify: false })
     .then(result => {
-        app.listen(process.env.PORT || 3000, () => {
+        app.listen(process.env.PORT || 5000, () => {
             console.log("Node Server is Running");
         });
     })
